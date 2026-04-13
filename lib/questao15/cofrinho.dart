@@ -1,7 +1,6 @@
 class Cofrinho {
   double saldo;
   int quantidadeDepositos;
-
   Cofrinho(this.saldo) : quantidadeDepositos = 0 {
     if (saldo < 0) {
       saldo = 0;

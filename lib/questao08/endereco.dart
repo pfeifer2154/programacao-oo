@@ -19,7 +19,7 @@ class Endereco {
     String cepStr = cep.toString().padLeft(8, '0');
     return "${cepStr.substring(0, 5)}-${cepStr.substring(5)}";
   }
-
+  
   void exibirEndereco() {
     print("Rua: $rua, Nº: $numero");
     print("Bairro: $bairro");

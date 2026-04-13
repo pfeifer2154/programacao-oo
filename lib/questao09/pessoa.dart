@@ -11,12 +11,11 @@ class Pessoa {
     if (idade < 0) throw Exception("Idade inválida");
     if (cpf.isEmpty) throw Exception("CPF inválido");
   }
-
+  
   void exibirPessoa() {
     print("Nome: $nome");
     print("Idade: $idade");
     print("CPF: $cpf");
-
     print("Endereço:");
     print("Rua: ${endereco.rua}, Nº: ${endereco.numero}");
     print("Bairro: ${endereco.bairro}");

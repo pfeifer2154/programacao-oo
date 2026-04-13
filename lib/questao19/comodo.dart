@@ -1,7 +1,6 @@
 class Comodo {
   String nome;
   double tamanho;
-
   Comodo(this.nome, this.tamanho) {
     if (nome.isEmpty) {
       throw Exception("Nome do cômodo não pode ser vazio");

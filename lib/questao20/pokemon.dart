@@ -4,7 +4,6 @@ class Pokemon {
   String tipo;
   int nivel;
   int hp;
-
   Pokemon(this.numero, this.nome, this.tipo, this.nivel, this.hp) {
     if (nome.isEmpty) {
       throw Exception("Nome não pode ser vazio");
@@ -19,7 +18,6 @@ class Pokemon {
       throw Exception("HP deve ser maior que 0");
     }
   }
-
   void exibirPokemon() {
     print("#$numero - $nome ($tipo) | Nível: $nivel | HP: $hp");
   }

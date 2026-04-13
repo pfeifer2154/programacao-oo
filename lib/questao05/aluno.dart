@@ -2,7 +2,7 @@ class Aluno {
   String nome;
   double nota1;
   double nota2;
-
+  
   Aluno(this.nome, this.nota1, this.nota2) {
     if (nome.isEmpty) {
       throw Exception("Nome inválido");
@@ -18,7 +18,6 @@ class Aluno {
   double calcularMedia() {
     return (nota1 + nota2) / 2;
   }
-
   String verificarAprovacao() {
     return calcularMedia() >= 6 ? "Aprovado" : "Reprovado";
   }

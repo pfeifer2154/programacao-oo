@@ -1,7 +1,6 @@
 class Semaforo {
   String corAtual;
   int tempoRestante;
-
   Semaforo(this.corAtual) : tempoRestante = 0 {
     _definirTempo();
   }
@@ -31,7 +30,6 @@ class Semaforo {
 
   void reduzirTempo() {
     tempoRestante--;
-
     if (tempoRestante <= 0) {
       trocarCor();
     }
@@ -39,15 +37,13 @@ class Semaforo {
 
   void exibirEstado() {
     String emoji;
-
     if (corAtual == "vermelho") {
-      emoji = "🔴";
+      emoji = "vermelho";
     } else if (corAtual == "verde") {
-      emoji = "🟢";
+      emoji = "verde";
     } else {
-      emoji = "🟡";
+      emoji = "amarelo";
     }
-
     print("Semáforo: $emoji ($corAtual) | Tempo: $tempoRestante");
   }
 }

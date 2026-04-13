@@ -21,14 +21,12 @@ class Produto {
 
   double calcularDesconto() {
     double total = precoUnitario * quantidade;
-
     if (quantidade >= 20) return total * 0.15;
     if (quantidade >= 10) return total * 0.10;
     if (quantidade >= 5) return total * 0.05;
-
     return 0;
   }
-
+  
   double calcularTotal() {
     return (precoUnitario * quantidade) - calcularDesconto();
   }

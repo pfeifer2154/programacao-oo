@@ -13,7 +13,7 @@ class Treinador {
   }
 
   void exibirTime() {
-    print("👤 Treinador: $nome\n");
+    print("Treinador: $nome\n");
 
     pokemon1.exibirPokemon();
     pokemon2.exibirPokemon();
@@ -36,7 +36,7 @@ class Treinador {
       maisForte = pokemon3;
     }
 
-    print("\n🔥 Pokémon mais forte:");
+    print("\nPokémon mais forte:");
     maisForte.exibirPokemon();
   }
 }

@@ -13,7 +13,6 @@ void main() {
     Aluno("Beatriz", 8, 8),
     Aluno("Rafael", 5, 5),
   ];
-
   for (var aluno in alunos) {
     aluno.exibirBoletim();
   }

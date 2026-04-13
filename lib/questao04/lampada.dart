@@ -13,7 +13,6 @@ class Lampada {
       print("Não é possível ligar, lâmpada queimada!");
       return;
     }
-
     if (!ligada) {
       ligada = true;
       quantidadeLigacoes++;
@@ -31,7 +30,7 @@ class Lampada {
       ligada = false;
     }
   }
-
+  
   void exibirEstado() {
     if (queimada) {
       print("Estado: Queimada");
@@ -40,7 +39,6 @@ class Lampada {
     } else {
       print("Estado: Desligada");
     }
-
     print("Quantidade de ligações: $quantidadeLigacoes");
     print("----------------------");
   }

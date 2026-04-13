@@ -2,7 +2,6 @@ class Musica {
   String titulo;
   String artista;
   int duracaoSegundos;
-
   Musica(this.titulo, this.artista, this.duracaoSegundos) {
     if (titulo.isEmpty) {
       throw Exception("Título não pode ser vazio");
@@ -14,7 +13,6 @@ class Musica {
       throw Exception("Duração deve ser maior que 0");
     }
   }
-
   void exibirMusica() {
     print("$titulo - $artista (${duracaoSegundos}s)");
   }

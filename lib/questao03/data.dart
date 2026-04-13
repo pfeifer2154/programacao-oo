@@ -14,11 +14,10 @@ class Data {
       throw Exception("Ano inválido");
     }
   }
-
+  
   void exibirData() {
     String diaFormatado = dia.toString().padLeft(2, '0');
     String mesFormatado = mes.toString().padLeft(2, '0');
-
     print("$diaFormatado/$mesFormatado/$ano");
   }
 }

@@ -1,5 +1,4 @@
 class Personagem {
-  
   String nome;
   int vida;
   int ataque;
@@ -23,7 +22,6 @@ class Personagem {
     }
 
     print("$nome atacou ${inimigo.nome}!");
-
     inimigo.vida -= ataque;
 
     if (inimigo.vida < 0) {
