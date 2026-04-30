@@ -1,5 +1,4 @@
 import 'cliente.dart';
-
 void main() {
   Cliente c1 = Cliente('Ana Lima', 'ana@email.com', 200.0, true);
   Cliente c2 = Cliente('Bruno Costa', 'bruno@email.com', 50.0, false);
